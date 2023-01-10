@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["dailyLookDetail"],{e417:function(t,n,e){"use strict";e.r(n);var i=function(){var t=this;t._self._c;return t._m(0)},s=[function(){var t=this,n=t._self._c;return n("div",{staticClass:"detail_cont"},[n("h2",[t._v("디테일")])])}],a={name:"List"},c=a,l=e("2877"),o=Object(l["a"])(c,i,s,!1,null,"803f0c70",null);n["default"]=o.exports}}]);
+//# sourceMappingURL=dailyLookDetail.32ad5200.js.map

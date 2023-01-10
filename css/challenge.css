@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.challenge_list > .nav-tabs .nav-item.show .nav-link,
+.challenge_list .nav-tabs .nav-link.active {
+  border-radius: 0;
+  color: #fff!important;
+  border: 1px solid #212121!important;
+  background-color: #212121!important;
+}
+
+.challenge_list > .nav-tabs .nav-link:focus,
+.challenge_list .nav-tabs .nav-link:hover {
+  border-radius: 0;
+  border: 1px solid #212121!important;
+}
+
+.challenge_list .nav-tabs .nav-link {
+  border-radius: 0;
+  border: 1px solid #212121!important;
+}
+
+.challenge_list {
+  height: 100%;
+  padding-bottom: 300px;
+}
+
+.challenge_list a {
+  color: #212121;
+}
+
+.challenge_list section {
+  width: 80%;
+  margin: 30px auto 50px;
+}
+
+.challenge_list .nav-tabs {
+  border: none;
+  display: flex;
+  padding-right: 10px;
+  justify-content: flex-end;
+}
+
+.challenge_list section .tab-pane ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.challenge_list section .tab-pane ul li {
+  flex: 1 1 25%;
+  padding: 0 10px;
+  margin-bottom: 3rem;
+}
+.challenge_list section .tab-pane ul li h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0.7rem;
+}
+
+.challenge_list section .tab-pane ul li span {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  border-top: 1px solid #212121;
+}
+
+.challenge_list section .tab-pane ul li .icon_wrap {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+.challenge_list section .tab-pane ul li .icon_wrap img {
+  width: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.challenge_list .nav-tabs {
+  font-size: 12px;
+}
+
+.challenge_list .nav-link {
+  padding: 5px 10px;
+}
+
+
+/****************************************************************/
+/**************************** 반응형 ****************************/
+/****************************************************************/
+
+@media only screen and (max-width: 1200px) {
+  .challenge_list section {
+    width: 95%;
+  }
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+  .challenge_list section {
+    width: 95%;
+  }
+
+  .challenge_list section .tab-pane ul li {
+    flex: 1 1 50%;
+  }
+}
+
+/* Mobile - Landscape */
+@media (max-width: 480px) {
+  .challenge_list section .tab-pane ul li {
+    flex: 1 1 100%;
+  }
+  .challenge_list section {
+    margin: 20px auto 50px;
+  }
+}

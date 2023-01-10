@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["magazineDetail"],{7175:function(t,n,a){"use strict";a.r(n);var e=function(){var t=this;t._self._c;return t._m(0)},i=[function(){var t=this,n=t._self._c;return n("div",{staticClass:"detail_cont"},[n("h2",[t._v("디테일")])])}],s={name:"List"},c=s,l=a("2877"),r=Object(l["a"])(c,e,i,!1,null,"50952c70",null);n["default"]=r.exports}}]);
+//# sourceMappingURL=magazineDetail.904ad43e.js.map

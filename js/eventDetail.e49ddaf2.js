@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["eventDetail"],{"4fe8":function(t,e,n){"use strict";n.r(e);var s=function(){var t=this;t._self._c;return t._m(0)},i=[function(){var t=this,e=t._self._c;return e("div",{staticClass:"detail_cont"},[e("h2",[t._v("디테일")])])}],a={name:"List"},c=a,l=n("2877"),r=Object(l["a"])(c,s,i,!1,null,"333be5ec",null);e["default"]=r.exports}}]);
+//# sourceMappingURL=eventDetail.e49ddaf2.js.map

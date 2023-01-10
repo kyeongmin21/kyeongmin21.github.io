@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["eventMain"],{"51e1":function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n._self._c;return e("router-view")},i=[],r={name:"Main"},u=r,c=t("2877"),o=Object(c["a"])(u,a,i,!1,null,"21264ca4",null);e["default"]=o.exports}}]);
+//# sourceMappingURL=eventMain.8f867136.js.map
