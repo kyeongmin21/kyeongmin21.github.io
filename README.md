@@ -1,1 +1,2 @@
-# kyeongmin21.github.io
+# github deployment
+- https://kyeongmin21.github.io/
