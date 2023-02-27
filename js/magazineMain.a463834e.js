@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["magazineMain"],{b7fa:function(n,a,e){"use strict";e.r(a);var i=function(){var n=this,a=n._self._c;return a("router-view")},t=[],r={name:"Main"},u=r,o=e("2877"),s=Object(o["a"])(u,i,t,!1,null,"ae6482a0",null);a["default"]=s.exports}}]);
+//# sourceMappingURL=magazineMain.a463834e.js.map

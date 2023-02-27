@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["MyPageMain"],{d05a:function(n,e,a){"use strict";a.r(e);var t=function(){var n=this,e=n._self._c;return e("router-view")},i=[],r={name:"Main"},u=r,c=a("2877"),o=Object(c["a"])(u,t,i,!1,null,"5f9c476e",null);e["default"]=o.exports}}]);
+//# sourceMappingURL=MyPageMain.aceb41a3.js.map

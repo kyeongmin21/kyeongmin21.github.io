@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["challengeMain"],{a779:function(n,e,a){"use strict";a.r(e);var t=function(){var n=this,e=n._self._c;return e("router-view")},i=[],r={name:"Main"},u=r,c=a("2877"),l=Object(c["a"])(u,t,i,!1,null,"68474805",null);e["default"]=l.exports}}]);
+//# sourceMappingURL=challengeMain.9d9ea949.js.map

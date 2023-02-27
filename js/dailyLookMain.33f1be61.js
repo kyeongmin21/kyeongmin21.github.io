@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["dailyLookMain"],{"8e41":function(n,a,e){"use strict";e.r(a);var i=function(){var n=this,a=n._self._c;return a("router-view")},o=[],t={name:"Main"},r=t,u=e("2877"),s=Object(u["a"])(r,i,o,!1,null,"0896a2a0",null);a["default"]=s.exports}}]);
+//# sourceMappingURL=dailyLookMain.33f1be61.js.map
