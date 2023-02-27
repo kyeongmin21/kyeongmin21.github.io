@@ -1,21 +1,185 @@
 @charset "utf-8";
 
+.daily_cont section {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.daily_cont section input {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+}
+
+.daily_cont section h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.daily_cont section .previewImg {
+  width: unset;
+  max-width: 100%;
+  border: 1px solid #808080;
+}
+
+.daily_cont section textarea {
+  width: 100%;
+}
+
+.daily_cont section .btn_wrap {
+  width: 305px;
+  margin: 50px auto;
+}
+
+.daily_cont section .btn_wrap button {
+  width: 150px;
+}
+
+
+
+/**************************** View ****************************/
+.daily_view .section1 {
+  position: relative;
+}
+.daily_view .section1 > div {
+  overflow: hidden;
+  border-top: 1px solid #808080;
+  padding-top: 10px;
+}
+
+.daily_view .section1 h3 {
+  float: left;
+}
+
+.daily_view .section1 a {
+  color: #212121;
+}
+
+.daily_view .section1 .icon_wrap {
+  float: right;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.daily_view .section1 > span {
+  color: #808080;
+}
+
+.daily_view .section2,
+.daily_view .section3 {
+  text-align: center;
+}
+
+.daily_view .section2 img {
+  width: 50%;
+}
+
+.daily_view .section4 {
+  margin: 100px auto;
+  border-top: 1px solid #212121;
+}
+
+.daily_cont .section4 .comment_write {
+  display: flex;
+  padding: 20px 0;
+}
+
+.daily_cont .section4 .comment_write img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.daily_cont .section4 .profile {
+  border: 1px solid #808080;
+  border-radius: 50%;
+}
+
+.daily_cont .section4 input {
+  flex-grow: 1;
+  height: 40px;
+  line-height: 40px;
+}
+
+.daily_cont .section4 .comment_view {
+  display: flex;
+  padding: 20px 0;
+}
+
+.daily_cont .section4 .comment_view img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.daily_cont .section4 .comment_view .edit {
+  flex-grow: 1;
+}
+
+.daily_cont .section4 .comment_view .edit .left {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.daily_cont .section4 .comment_view .edit .left .day {
+  color: #808080;
+}
+
+.daily_cont .section4 .comment_view .edit .left .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+
+
 
 /****************************************************************/
 /**************************** 반응형 ****************************/
 /****************************************************************/
 
 @media only screen and (max-width: 1200px) {
+  .daily_cont section {
+    width: 93%;
+  }
 
+  .daily_view .section2 img {
+    width: 70%;
+  }
 }
 
 
 /* Tablet */
 @media only screen and (max-width: 992px) {
-
+  .daily_view .section4 {
+    margin: 60px auto;
+  }
 }
 
 /* Mobile - Landscape */
 @media (max-width: 480px) {
+  .daily_cont section h3 {
+    font-size: 14px;
+  }
+
+  .daily_cont section .btn_wrap {
+    width: 205px;
+    margin: 50px auto;
+  }
+  .daily_cont section .btn_wrap button {
+    width: 100px;
+  }
+
+  .daily_view .section2 img {
+    width: 100%;
+  }
+
+  .daily_cont .section4 input {
+    flex-grow: 1;
+    height: 40px;
+    line-height: 40px;
+  }
 
 }

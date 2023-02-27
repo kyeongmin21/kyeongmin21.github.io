@@ -4,6 +4,12 @@
 #nav {
   font-size: 14px !important;
   width: 100%;
+  padding-top: 50px;
+}
+
+/* 헤더 푸터 제외한 wrapper 부분 */
+#wrapper {
+  padding-bottom: 300px;
 }
 
 img {
@@ -23,7 +29,7 @@ ul {
   border-radius: 0 !important;
 }
 
-input[type='text'], input[type='email'], input[type='password'] {
+input[type='text'], input[type='email'], input[type='password'], input[type='file'] {
   font-size: 13px;
 }
 
@@ -33,16 +39,53 @@ input[type=checkbox], input[type=radio] {
 
 .cate_title {
   width: 80%;
-  margin: 80px auto 0;
+  margin: auto;
+  padding: 20px 0;
 }
 
 .cate_title img {
-  width: 230px;
+  width: 200px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid #76FF03 !important;
   color: #212121;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/********************************/
+/****** 이미지 위 아이콘 ********/
+/********************************/
+
+.img_wrap {
+  position: relative;
+}
+
+.img_icon {
+  position: absolute;
+  left: 0;
+  width: 70px;
+}
+
+/****** 하트, 북마크 아이콘 ********/
+.icon_wrap {
+  display: flex;
+  margin-top: 10px;
+}
+
+.icon_wrap p {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon_wrap img {
+  width: 20px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 
@@ -51,36 +94,37 @@ input:focus {
 /*********** Button *************/
 /********************************/
 
-.btn {
-  border-radius: 0 !important;
-  font-size: 14px !important;
+button {
+  width: 100%;
+  padding: .375rem .75rem;
 }
 
-.btn:hover {
-  transition: none !important;
+/* 버튼 비활성화 일때 */
+.button_default:disabled {
+  border: 1px solid #DBDBDB;
+  background-color: #DBDBDB;
+  color: #fff;
 }
 
-.btn-outline-secondary {
-  border: 1px solid #808080 !important;
+/* 버튼 활성화 일때 */
+.button_default {
+  border: 1px solid #76FF03;
+  background-color: #76FF03;
+  color: #212121;
 }
 
-.btn-outline-secondary:hover, .btn-outline-secondary:active {
-  color: #808080 !important;
-  background-color: transparent !important;
+.button_default_border {
+  border: 1px solid #212121;
 }
 
-.btn-secondary {
-  background-color: #DBDBDB !important;
+.button_default_fill {
+  border: 1px solid #212121;
+  background-color: #212121;
+  color: #fff;
 }
 
-.btn-light:hover {
-  background-color: #f8f9fa!important;
-  border-color: #f8f9fa!important;
-}
 
-.btn-dark {
-  background-color: #23272b!important;
-}
+
 
 /********************************/
 /*********** Margin *************/
@@ -99,6 +143,7 @@ input:focus {
 .mt80 { margin-top: 80px !important; }
 .mt90 { margin-top: 90px !important; }
 .mt100 { margin-top: 100px !important; }
+
 .mb05 { margin-bottom: 5px !important; }
 .mb10 { margin-bottom: 10px !important; }
 .mb20 { margin-bottom: 20px !important; }
@@ -110,8 +155,13 @@ input:focus {
 .mb80 { margin-bottom: 80px !important; }
 .mb90 { margin-bottom: 90px !important; }
 .mb100 { margin-bottom: 100px !important; }
+
 .ml05 { margin-left: 5px !important; }
 .ml10 { margin-left: 10px !important; }
+.ml20 { margin-left: 20px !important; }
+.ml30 { margin-left: 30px !important; }
+.ml40 { margin-left: 40px !important; }
+.ml50 { margin-left: 50px !important; }
 .mr0 { margin-right: 0 !important; }
 .mr10 { margin-right: 10px !important; }
 .mr20 { margin-right: 20px !important; }
@@ -159,17 +209,13 @@ input:focus {
     width: 93%;
   }
 
-  .cate_title img {
-    width: 200px;
-  }
-
 }
 
 
 /* Tablet */
 @media only screen and (max-width: 992px) {
   .cate_title {
-    margin: 30px auto 0;
+    margin: 0 auto;
   }
 
   .cate_title img {

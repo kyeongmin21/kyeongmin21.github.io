@@ -1,118 +1,237 @@
 @charset "utf-8";
 
-.challenge_list > .nav-tabs .nav-item.show .nav-link,
-.challenge_list .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
   border-radius: 0;
   color: #fff!important;
   border: 1px solid #212121!important;
   background-color: #212121!important;
 }
 
-.challenge_list > .nav-tabs .nav-link:focus,
-.challenge_list .nav-tabs .nav-link:hover {
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
   border-radius: 0;
   border: 1px solid #212121!important;
 }
 
-.challenge_list .nav-tabs .nav-link {
-  border-radius: 0;
+.nav-tabs .nav-link {
+  border-radius: 0!important;;
   border: 1px solid #212121!important;
 }
 
-.challenge_list {
-  height: 100%;
-  padding-bottom: 300px;
-}
-
-.challenge_list a {
-  color: #212121;
-}
-
-.challenge_list section {
-  width: 80%;
-  margin: 30px auto 50px;
-}
-
-.challenge_list .nav-tabs {
-  border: none;
+.nav-tabs {
+  border: none!important;;
   display: flex;
   padding-right: 10px;
   justify-content: flex-end;
 }
 
-.challenge_list section .tab-pane ul {
+.cate_layout {
+  height: 100%;
+  /*padding-bottom: 300px;*/
+}
+
+.cate_layout a {
+  color: #212121;
+}
+
+.cate_layout section {
+  width: 80%;
+  margin: 30px auto 50px;
+}
+
+.cate_layout section ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.challenge_list section .tab-pane ul li {
-  flex: 1 1 25%;
-  padding: 0 10px;
+.cate_layout section .tab-pane ul li,
+.cate_layout section > ul li {
+  width: 25%;
+  padding: 0 7px;
   margin-bottom: 3rem;
 }
-.challenge_list section .tab-pane ul li h3 {
+
+.cate_layout section ul li h3 {
   font-size: 1.1rem;
   font-weight: 700;
   margin-top: 0.7rem;
 }
 
-.challenge_list section .tab-pane ul li span {
+.cate_layout section ul li span {
   width: 100%;
   display: block;
   margin-bottom: 15px;
   border-top: 1px solid #212121;
 }
 
-.challenge_list section .tab-pane ul li .icon_wrap {
-  display: flex;
-  margin-top: 10px;
-}
-
-
-.challenge_list section .tab-pane ul li .icon_wrap img {
-  width: 20px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-
-.challenge_list .nav-tabs {
+.cate_layout .nav-tabs {
   font-size: 12px;
 }
 
-.challenge_list .nav-link {
-  padding: 5px 10px;
+.challenge_cont section {
+  width: 80%;
+  margin: 30px auto;
 }
 
+.challenge_cont section h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.challenge_cont .section3 {
+  display: flex;
+}
+
+.challenge_cont .section3 button {
+  width: 150px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.challenge_cont section input {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+}
+
+.challenge_cont section select {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+}
+
+.challenge_cont section .btn_wrap {
+  width: 305px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.challenge_cont section .btn_wrap button {
+  width: 150px;
+}
+
+.challenge_cont .section3 input,
+.challenge_cont .section3 select {
+  margin-right: 5px;
+}
+
+.challenge_cont .section4 .info_wrap {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.challenge_cont .section4 .info_clothes {
+  width: 100%;
+  display: inline;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #808080;
+  font-size: 12px;
+  position: relative;
+}
+
+.challenge_cont .section4 .x_icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 7px;
+  top: 4px;
+}
+
+.challenge_cont .guide {
+  background-color: #F6F5F5;
+  padding: 10px 20px;
+}
+
+.challenge_cont .guide img {
+  width: 20px;
+  height: 20px;
+}
+
+/**************************** write ****************************/
+.challenge_cont .write .guide h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.challenge_cont .write .guide ul li {
+  line-height: 24px;
+}
+
+.challenge_cont .write .section1 img {
+  width: unset;
+  max-width: 100%;
+}
 
 /****************************************************************/
 /**************************** 반응형 ****************************/
 /****************************************************************/
 
 @media only screen and (max-width: 1200px) {
-  .challenge_list section {
+  .cate_layout section {
     width: 95%;
   }
+
+  .challenge_cont section {
+    width: 93%;
+  }
+
 }
 
 
 /* Tablet */
 @media only screen and (max-width: 992px) {
-  .challenge_list section {
+  .cate_layout section {
     width: 95%;
   }
 
-  .challenge_list section .tab-pane ul li {
-    flex: 1 1 50%;
+  .cate_layout section .tab-pane ul li,
+  .cate_layout section > ul li {
+    width: 50%;
   }
+
 }
+
 
 /* Mobile - Landscape */
 @media (max-width: 480px) {
-  .challenge_list section .tab-pane ul li {
-    flex: 1 1 100%;
+  .cate_layout section .tab-pane ul li,
+  .cate_layout section > ul li {
+    width: 50%;
   }
-  .challenge_list section {
+
+  .cate_layout section {
     margin: 20px auto 50px;
   }
+
+  .challenge_cont .section3 {
+    display: grid;
+  }
+
+  .challenge_cont .section3 select {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .challenge_cont .section3 input {
+    margin-bottom: 5px;
+  }
+
+  .challenge_cont .section3 button {
+    width: 100%;
+  }
+
 }
+
+@media (max-width: 480px) {
+  .challenge_cont section .btn_wrap {
+    width: 97%;
+  }
+  .challenge_cont section .btn_wrap button {
+    width: 80px;
+  }
+}
+

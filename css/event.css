@@ -1,9 +1,12 @@
 @charset "utf-8";
 
+.event a {
+  color: #212121;
+}
+
 .event .event_wrap {
   width: 80%;
-  padding-bottom: 350px;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 .event .event_wrap ul {
   display: flex;
@@ -24,6 +27,35 @@
   font-weight: 700;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.event .event_detail {
+  width: 80%;
+  margin: auto;
+}
+
+.event .event_detail h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 50px 0 5px;
+}
+
+.event .event_detail p {
+  color: #808080;
+  padding-bottom: 20px;
+}
+
+.event .event_detail img {
+  width: 100%;
+}
+
+.event .goToChallenge {
+  text-align: center;
+  margin: 50px 0 100px;
+}
+
+.event .goToChallenge button {
+  width: 250px;
 }
 
 /****************************************************************/
@@ -48,8 +80,20 @@
 @media (max-width: 480px) {
   .event .event_wrap {
     width: 95%;
+    margin: 10px auto;
   }
   .event .event_wrap ul li h3 {
     font-size: 1rem;
   }
+
+  .event .event_detail {
+    width: 95%;
+    margin: auto;
+  }
+
+  .event .event_detail h2 {
+    margin: 20px 0 5px;
+  }
+
+
 }

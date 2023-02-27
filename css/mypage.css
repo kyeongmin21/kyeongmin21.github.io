@@ -3,21 +3,22 @@
 .login, .join, .find {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  align-items: center;
+  margin-top: -50px;
+  padding-top: 150px;
 }
 
 .login a {
   color: #212121;
 }
 
-.login
 .login_cont,
 .find_cont {
   width: 400px;
 }
 
-.login .login_cont .login_input h3,
-.join .join_cont .join_input h3 {
+.login .login_cont h3,
+.join .join_cont h3 {
   border-bottom: 2px solid #212121;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -25,7 +26,7 @@
   font-weight: 700;
 }
 
-.join .join_cont .join_input h3 p {
+.join .join_cont h3 p {
   font-size: 14px;
   font-weight: 500;
   margin-top: 30px;
@@ -56,6 +57,7 @@
 
 .login .login_cont .login_process {
   display: flex;
+  margin-top: 5px;
 }
 
 .login .login_cont .login_process ul li {
@@ -98,7 +100,6 @@
   box-shadow: 2px 2px 10px #ccc;
 }
 
-
 .login .login_cont h5 {
   border-bottom: 1px solid #DBDBDB;
   padding-bottom: 10px;
@@ -108,7 +109,6 @@
   color: #808080;
   font-size: 16px;
 }
-
 
 .join .join_cont {
   width: 400px;
@@ -144,64 +144,41 @@
 }
 
 
-.join .btn_wrap ul {
+.btn_wrap ul {
   display: flex;
 }
 
-.join .btn_wrap ul li {
+.btn_wrap ul li {
   flex: 1 1 50%;
 }
 
-.join .btn_wrap .btn-outline-secondary {
-  width: 100%;
-}
 
-.join .btn_wrap .btn-secondary {
-  border: 1px solid #76FF03;
-  background-color: #76FF03 !important;
-  color: #212121;
-  width: 100%;
-}
-
-.join .btn_wrap .disabled {
-  border: 1px solid #DBDBDB;
-  background-color: #DBDBDB !important;
-}
-
-.join .step1 .step1_wrap {
+.agreement_wrap {
   margin: 40px 0;
 }
 
-.join .step1 .step1_wrap .agreement {
+.agreement_wrap .agreement {
   padding: 20px;
   border: 1px solid #808080;
 }
 
-.join .step1 .step1_wrap .agreement ul li label {
-  margin: 5px;
-}
-
-.join .step1 .step1_wrap #all-agree {
-  margin-right: 5px;
-}
-
-.join .step1 .step1_wrap p {
-  color: #808080;
-  margin-top: 5px;
-  text-align: right;
-  text-decoration: underline;
-}
-
-.join .step1 .step1_wrap .agreement ul li span {
-  color: #ccc;
-  float: right;
-  cursor: pointer;
+.agreement_wrap .agreement .text_show {
   font-size: 12px;
+  color: #808080;
+  padding-top: 3px;
   text-decoration: underline;
 }
 
+.agreement_wrap .agreement .form-group {
+  margin-bottom: 5px;
+}
 
-/* step1 이용약관 */
+.agreement_wrap .agreement ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 이용약관 */
 div#modal-agree,
 div#modal-personal-agree,
 div#modal-marketing-agree {
@@ -214,7 +191,7 @@ div#modal-marketing-agree {
 
 div#modal-agree___BV_modal_content_,
 div#modal-personal-agree___BV_modal_content_,
-div#modal-marketing-agree___BV_modal_content_{
+div#modal-marketing-agree___BV_modal_content_ {
   width: 400px;
   height: 500px;
 }
@@ -229,46 +206,18 @@ div#modal-marketing-agree .modal-body {
 div#modal-agree .modal-body b,
 div#modal-personal-agree .modal-body b,
 div#modal-marketing-agree .modal-body b {
-  font-size:16px;
+  font-size: 16px;
   margin-bottom: 10px;
   display: block;
 }
 
-
-
-.join .step2 .step2_wrap {
-  margin: 40px auto;
-}
-
-.join .step2 .step2_wrap p {
+.join p {
   font-size: 14px;
   padding-bottom: 5px;
 }
 
-.join .step2 .step2_wrap p > span {
+p span.circle {
   font-size: 11px;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active,
-.step1 .btn-secondary:not(:disabled):not(.disabled):active,
-.step2 .btn-secondary:not(:disabled):not(.disabled):active,
-.show > .btn-secondary.dropdown-toggle {
-  color: #212121!important;
-  border: 1px solid #76FF03;
-}
-
-.join .step3 .step3_wrap {
-  text-align: center;
-}
-
-.join .step3 .step3_wrap p {
-  padding: 20px 0 30px;
-  color: #76FF03;
-  font-weight: 700;
-}
-
-.join .step3 .step3_wrap button {
-  width: 100%;
 }
 
 /* id pw 찾기 */
@@ -297,17 +246,12 @@ div#modal-marketing-agree .modal-body b {
 }
 
 .find .router-link-active a {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 .find h6 {
   font-weight: 600;
   margin-top: 20px;
-}
-
-.find .btn_wrap button.btn.btn-secondary {
-  width: 100%;
-  border: unset;
 }
 
 .find .btn_wrap p {
@@ -318,12 +262,170 @@ div#modal-marketing-agree .modal-body b {
   color: #808080;
 }
 
+/********************************/
+/********* 마이페이지 ***********/
+/********************************/
+.myPage .my_info {
+  width: 420px;
+  margin: 40px auto 100px;
+  display: flex;
+}
+
+.myPage .my_info .info_left {
+  width: 130px;
+  height: 130px;
+}
+
+.myPage .my_info .info_left img {
+  border: 1px solid #212121;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.myPage .my_info .info_right {
+  margin-left: 50px;
+}
+
+.myPage .my_info .info_right h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.myPage > section .tab ul {
+  border-bottom: 1px solid #ccc;
+}
+
+.myPage > section .tab ul li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ccc;
+}
+
+.myPage > section .tab ul li.active {
+  color: #212121;
+  border-bottom: 2px solid #212121;
+}
+
+.myPage .tab_content {
+  margin-top: 30px;
+
+}
+
+.myPage .tab_content .nav-tabs {
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.myPage .tab_content ul li {
+  position: relative;
+}
+
+.myPage .tab_content ul li .kebab_icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.myPage .tab_content .kebab_dropdown {
+  width: 150px;
+  height: 71px;
+  text-align: center;
+  border: 1px solid #212121;
+  background-color: #fff;
+  position: absolute;
+  top: 55px;
+  right: 7px;
+}
+
+.myPage .tab_content .kebab_dropdown p:nth-child(1) {
+  border-bottom: 1px solid #212121;
+}
+
+.myPage .tab_content .kebab_dropdown p {
+  line-height: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.mypage_edit {
+  width: 100%;
+  padding: 50px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mypage_edit h2 img {
+  width: 150px;
+}
+
+.mypage_edit h2 p {
+  margin: 10px 0 20px;
+  border-bottom: 1px solid #212121;
+}
+
+.mypage_edit .wrap {
+  width: 400px;
+}
+
+.profile_edit .wrap .photo img {
+  width: 150px;
+}
+
+.profile_edit .wrap .photo {
+  text-align: center;
+  margin: 20px 0 50px;
+}
+
+.profile_edit .wrap .photo button {
+  width: 130px;
+}
+
+.profile_edit .wrap .photo img {
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid #212121;
+}
+
+.profile_edit .wrap textarea {
+  width: 100%;
+  border: 1px solid #ced4da;
+}
+
+.mypage_edit p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+
+
+/****************************************************************/
+/**************************** 반응형 ****************************/
+/****************************************************************/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
 @media (max-width: 480px) {
   .login, .join, .find {
-    margin-top: 50px;
-    padding: 20px;
+    width: 95%;
+    margin: auto;
+    padding: 50px 0;
   }
-
 
   .login .login_cont .login_process ul:nth-child(1) {
     width: 200px;
@@ -345,5 +447,37 @@ div#modal-marketing-agree .modal-body b {
     width: 300px;
     height: 400px;
   }
+
+  .myPage .my_info {
+    width: auto;
+    margin: 20px auto 40px;
+    display: block;
+  }
+
+  .myPage .my_info .info_left {
+    margin: auto;
+    text-align: center;
+    width: 150px;
+  }
+
+  .myPage .my_info .info_left img {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .myPage .my_info .info_right {
+    margin: 40px 0 0;
+    text-align: center;
+  }
+
+  .myPage .my_info .info_right .icon_wrap {
+    display: block;
+  }
+
+  .mypage_edit .wrap {
+    width: 95%;
+  }
+
 
 }
